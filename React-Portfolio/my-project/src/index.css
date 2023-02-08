@@ -1,0 +1,53 @@
+@tailwind base;
+
+@layer base {
+    h1 {
+        @apply text-[54px] font-black leading-[50px];
+    }
+
+    h2 {
+        @apply text-[24px] font-normal leading-[20px] text-[#ff0a65] tracking-widest mt-2;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(87, 87, 87);
+    background: linear-gradient(0deg, rgb(226, 156, 64) 0%, rgb(247, 186, 94) 100%);
+}
+
+#root {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+canvas {
+    touch-action: none;
+}
+
+.htmlScreen iframe
+{
+    width: 1024px;
+    height: 670px;
+    border: none;
+    border-radius: 20px;
+    background: black;
+}
